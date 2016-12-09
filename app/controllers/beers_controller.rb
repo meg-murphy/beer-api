@@ -30,6 +30,7 @@ class BeersController < ApplicationController
     # or use 'find' which finds by id
     @beer = Beer.find(params[:id])
     @beer.destroy
-    redirect_to :index
+    redirect_to "/beer"
+    # could also give message that it was deleted successfully: render json: { message: "Employee "#{beer.id}" successfully deleted!"}
   end
 end
