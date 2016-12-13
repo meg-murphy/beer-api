@@ -16,3 +16,9 @@
   alcohol = Faker::Beer.alcohol
   Beer.create(name: name, style: style, hop: hop, yeast: yeast, malts: malts, ibu: ibu, alcohol: alcohol)
 end
+
+500.times do
+  city = Faker::Address.city
+  state = Faker::Address.state
+  BeerAvailabilityCity.create(city: city, state: state, beer_id: Beer.ids.sample)
+end
