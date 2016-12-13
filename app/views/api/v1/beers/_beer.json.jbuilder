@@ -5,3 +5,4 @@ json.yeast beer.yeast
 json.malts beer.malts
 json.ibu beer.ibu
 json.alcohol beer.alcohol
+json.id beer.id
